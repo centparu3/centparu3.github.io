@@ -1,0 +1,353 @@
+/* Estilos básicos y globales */
+html {
+    background-color: #f4f4f4;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Suaviza la transición de los enlaces */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 24px;
+    background-color: #333;
+    color: #fff;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.header-menu {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+
+.header-menu a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+
+.header-menu a:hover {
+    color: #d5d5d5;
+}
+
+
+.header-menu a {
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative; /* Necesario para la posición del pseudo-elemento :after */
+    display: inline-block; /* Cambiar a inline-block para permitir transformaciones */
+}
+
+/* Estilo para hover */
+.header-menu a:hover {
+    color: #d5d5d5;
+    transform: translateY(-5px); /* Levanta ligeramente el enlace */
+}
+
+/* Estilos para el subrayado animado */
+.header-menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px; /* Ajusta la posición según necesites */
+    left: 0;
+}
+
+.header-menu a:hover::after {
+    width: 100%; /* Extiende el subrayado en hover */
+}
+
+
+/* Hero Section */
+.hero {
+    background-image: url('../img/high_res_kactus_hats_hero_background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    
+}
+
+
+hr{
+    margin: 20px;
+}
+
+.hero-content {
+    
+    padding: 60px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3.75rem; /* 6xl en Tailwind */
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.25rem; /* xl en Tailwind */
+    margin-bottom: 24px;
+}
+
+/* Botón general */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #292d35;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d5d5d5;
+}
+
+
+
+/* Botón general */
+.black-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #292d35;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.black-btn:hover {
+    background-color: #3b3f48;
+}
+
+
+
+.btn, .black-btn {
+    font-weight: 1000; /* Peso de fuente más audaz */
+    letter-spacing: 1px; /* Espacio entre letras */
+    padding: 15px 30px; /* Botones más grandes */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+
+
+
+/* Sección de productos destacados */
+.text_container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text_container h1, .contact-section h2 {
+    font-size: 3rem; /* 5xl en Tailwind */
+    font-weight: bold;
+    margin: 0;
+}
+
+.text_container p, .contact-section p {
+    font-size: 0.875rem; /* sm en Tailwind */
+    margin-bottom: 24px;
+}
+
+/* Grid de productos */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    width: 80%;
+    margin: auto;
+}
+
+.grid div {
+    background-color: #fff; /* Fondo para cada producto */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: auto;
+    text-align: center;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.gorra_img {
+    width: 300px;
+    margin-bottom: 12px;
+}
+
+/* Sección de contacto */
+.contact-section {
+    background-color: #eaeaea;
+    padding: 40px 0;    
+}
+
+.contact-input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    color: #fff;
+    cursor: pointer;
+    width: 61%;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+
+
+.acerca-de {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    
+}
+
+.acerca-de-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.acerca-de-texto {
+    flex: 1;
+    padding-right: 20px;
+    color: #292d35;
+    font-size: 2.75rem;
+}
+
+.acerca-de-texto h3 {
+    font-size: 2.5rem;
+    color: #292d35;
+    margin-bottom: 20px;
+}
+
+.acerca-de-texto p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #646464;
+}
+
+.acerca-de-imagen {
+    flex: 1;
+    text-align: right;
+}
+
+.acerca-de-imagen img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para dispositivos con pantallas medianas (tabletas) */
+@media (max-width: 1200px) {
+    .grid {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en lugar de 3 */
+    }
+
+    .contact-input, .contact-btn {
+        width: 80%; /* Ajusta el ancho de los inputs y botones */
+    }
+}
+
+/* Estilos para dispositivos con pantallas pequeñas (móviles) */
+@media (max-width: 880px) {
+
+    .hero{
+        padding: 80px 0;
+    }
+
+    .header-menu {
+        flex-direction: column; /* Menú en columna */
+        gap: 10px; /* Espacio entre elementos del menú */
+    }
+
+    .grid {
+        width: 100%;
+        grid-template-columns: 1fr; /* 1 columna para los productos */
+    }
+
+    .acerca-de-content, .acerca-de-texto, .acerca-de-imagen {
+        flex-direction: column; /* Alinear en columna en la sección acerca de */
+        text-align: center;
+    }
+
+    .acerca-de-imagen img {
+        width: 80%; /* Ajusta el ancho de la imagen */
+        margin: 0 auto; /* Centrar imagen */
+    }
+
+    .contact-input, .contact-btn {
+        width: 90%; /* Aumenta el ancho para dispositivos más pequeños */
+    }
+}

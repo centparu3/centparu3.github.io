@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kactus Hats</title>
+
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+
+<body>
+    <header>
+        <div class="header-title">KACTUS HATS</div>
+        <hr>
+        <div class="header-menu">
+            <a href="#acerca-de">ACERCA DE</a>
+            <a href="#">INICIO</a>
+            <a href="#contacto">CONTACTO</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Descubre lo Nuevo</h2>
+                <p>Explora nuestra última colección de gorras.</p>
+                <a href="#productos" class="btn">Ver Colección</a>
+            </div>
+        </section>
+                
+        <section id="acerca-de" class="acerca-de">
+            <div class="acerca-de-content">
+                <div class="acerca-de-texto">
+                    <h3>Sobre Nosotros</h3>
+                    <p>Drops de gorras de lujo con diseños exclusivos y de temporada basados en las tendencias del mercado.</p>
+                    <p>Expresamos la personalidad, exclusividad y estilo de nuestros clientes mediante gorras con diseños únicos.</p>
+                </div>
+                <div class="acerca-de-imagen">
+                    <img src="img/logo.png" alt="Logo de Kactus Hats">
+                </div>
+            </div>
+        </section>
+
+        <section id="productos">
+            <div class="text_container">
+                <br>
+                <h1>PRODUCTOS DESTACADOS</h1>
+                <br>
+            </div>
+        </section>
+
+        <section class="grid">
+            <div>
+                <img src="img/gorra.png" alt="Stylish black hat from the Kactus Hats modern collection" class="gorra_img">
+                <p class="font-bold mb-2">Gorra #1 - Agotado</p>
+                <p>$780.00</p>
+                <a href="#" class="black-btn">Detalles</a>
+            </div>
+
+            <div>
+                <img src="img/gorra2.png" alt="Stylish black hat from the Kactus Hats modern collection" class="gorra_img">
+                <p class="font-bold mb-2">Gorra #2 - Agotado</p>
+                <p>$780.00</p>
+                <a href="#" class="black-btn">Detalles</a>
+            </div>
+
+            <div>
+                <img src="img/gorra3.png" alt="Stylish black hat from the Kactus Hats modern collection" class="gorra_img">
+                <p class="font-bold mb-2">Gorra #3 - Agotado</p>
+                <p>$780.00</p>
+                <a href="#" class="black-btn">Detalles</a>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <div class="text_container">
+                <h2>Contacto</h2>
+                <p>Si tienes alguna pregunta, no dudes en contactarnos.</p>
+                <form class="contact-form" action="#" method="post">
+                    <input type="text" placeholder="Tu nombre" class="contact-input">
+                    <input type="email" placeholder="Tu email" class="contact-input">
+                    <textarea placeholder="Tu mensaje" class="contact-input"></textarea>
+                    <button type="submit" class="contact-btn black-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Kactus Hats. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        const smoothScrollLinks = document.querySelectorAll('.header-menu a[href^="#"], a.btn[href^="#"]');
+
+        for (const smoothScrollLink of smoothScrollLinks) {
+            smoothScrollLink.addEventListener("click", function(e) {
+                e.preventDefault();
+                const targetId = e.currentTarget.getAttribute("href");
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
