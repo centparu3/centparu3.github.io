@@ -1,129 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kactus Hats</title>
-
-<link rel="stylesheet" href="css/styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea de Geografía</title>
+    <link rel="stylesheet" href="css/styles_geo.css">
 </head>
-
-
 <body>
     <header>
-        <div class="header-title">KACTUS HATS</div>
-        <hr>
-        <div class="header-menu">
-            <a href="#acerca-de">ACERCA DE</a>
-            <a href="#">INICIO</a>
-            <a href="#contacto">CONTACTO</a>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#geografia">Geografía</a></li>
+                <li><a href="#mexico-puebla">México y Puebla</a></li>
+                <li><a href="#elementos-bioticos-abioticos">Elementos Bióticos y Abióticos</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Descubre lo Nuevo</h2>
-                <p>Explora nuestra última colección de gorras.</p>
-                <a href="#productos" class="btn">Ver Colección</a>
-            </div>
-        </section>
-                
-        <section id="acerca-de" class="acerca-de">
-            <div class="acerca-de-content">
-                <div class="acerca-de-texto">
-                    <h3>Sobre Nosotros</h3>
-                    <p>Drops de gorras de lujo con diseños exclusivos y de temporada basados en las tendencias del mercado.</p>
-                    <p>Expresamos la personalidad, exclusividad y estilo de nuestros clientes mediante gorras con diseños únicos.</p>
-                </div>
-                <div class="acerca-de-imagen">
-                    <img src="img/logo.png" alt="Logo de Kactus Hats">
-                </div>
-            </div>
-        </section>
-
-        <section id="productos">
-            <div class="text_container">
-                <br>
-                <h1>PRODUCTOS DESTACADOS</h1>
-                <br>
-            </div>
-        </section>
-
-        <section class="grid">
-            <div>
-                <img src="img/5bee456ee18635934c47359f0acde80a.jpg" alt="Stylish black hat from the Kactus Hats modern collection" class="gorra_img">
-                <p class="font-bold mb-2">Gorra #1 - Agotado</p>
-                <p>$--</p>
-                <a href="#" class="black-btn">Detalles</a>
-            </div>
-
-            <div>
-                <img src="img/5bee456ee18635934c47359f0acde80a.jpg" alt="Stylish black hat from the Kactus Hats modern collection" class="gorra_img">
-                <p class="font-bold mb-2">Gorra #2 - Agotado</p>
-                <p>$--</p>
-                <a href="#" class="black-btn">Detalles</a>
-            </div>
-
-            <div>
-                <img src="img/5bee456ee18635934c47359f0acde80a.jpg" alt="Stylish black hat from the Kactus Hats modern collection" class="gorra_img">
-                <p class="font-bold mb-2">Gorra #3 - Agotado</p>
-                <p>$--</p>
-                <a href="#" class="black-btn">Detalles</a>
-            </div>
-        </section>
-
-        <section id="contacto" class="contact-section">
-            <div class="text_container">
-                <h2>Contacto</h2>
-                <p>Si tienes alguna pregunta, no dudes en contactarnos.</p>
-                <form class="contact-form" action="#" method="post">
-                    <input type="text" placeholder="Tu nombre" class="contact-input">
-                    <input type="email" placeholder="Tu email" class="contact-input">
-                    <textarea placeholder="Tu mensaje" class="contact-input"></textarea>
-                    <button type="submit" class="contact-btn black-btn">Enviar Mensaje</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-
-  <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; 2024 Kactus Hats. Todos los derechos reservados.</p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-  </footer>
-
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
         
-        const smoothScrollLinks = document.querySelectorAll('.header-menu a[href^="#"], a.btn[href^="#"]');
+    <section id="geografia">
+        <h2>Geografía</h2>
+        <p><strong>Significado:</strong> La geografía tiene por objeto el estudio del medio físico, tanto el espacio natural como la relación entre los seres humanos y su entorno. Esta disciplina se divide, a su vez, en dos grandes ramas: geografía general y geografía regional.</p>
+        <p><strong>Origen:</strong> La geografía apareció en la antigua Grecia, siendo en el comienzo conocida como historia natural o filosofía natural. Las razones de su nacimiento en Grecia son debidas a la rápida expansión de los griegos en Occidente. Gran parte del mundo occidental conocido fue dominado por los griegos, sobre todo el Mediterráneo oriental.</p>
+        <p><strong>Objeto de estudio:</strong> El objeto de estudio de la geografía es la descripción y análisis del planeta Tierra, así como la disposición y la distribución de los elementos que existen en la superficie terrestre.</p>
+        
+        <img src="img/geografía.jpg" alt="">
 
-        for (const smoothScrollLink of smoothScrollLinks) {
-            smoothScrollLink.addEventListener("click", function(e) {
-                e.preventDefault();
-                const targetId = e.currentTarget.getAttribute("href");
-                const targetElement = document.querySelector(targetId);
 
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 100,
-                        behavior: "smooth"
-                    });
-                }
-            });
-        }
-    });
-</script>
+        <h3>Ciencias Auxiliares</h3>
+        <ul>
+            <li><strong>Geología:</strong> Ciencia que estudia la composición y estructura física de la Tierra, incluyendo su evolución.</li>
+            <li><strong>Meteorología:</strong> Ciencia que analiza el clima y los fenómenos atmosféricos, apoyándose en la física y química atmosférica.</li>
+            <li><strong>Hidrología:</strong> Estudio científico del agua en la Tierra, enfocándose en sus propiedades, distribución y circulación.</li>
+            <li><strong>Criología:</strong> Rama que investiga las formas del agua en estado sólido, como glaciares y granizo.</li>
+            <li><strong>Cartografía:</strong> Ciencia y arte de crear mapas para representar espacios geográficos.</li>
+            <li><strong>Astronomía:</strong> Estudio de los astros y su influencia en la comprensión del espacio y la geografía celeste.</li>
+            <li><strong>Ecología:</strong> Investigación de las interacciones entre los seres vivos y su entorno, tanto biótico como abiótico.</li>
+            <li><strong>Biología:</strong> Ciencia que explica la diversidad de la vida, esencial para entender la biodiversidad y la conservación del medio ambiente.</li>
+            <li><strong>Sociología:</strong> Estudio de las sociedades humanas, sus estructuras, evolución y dinámicas de interacción.</li>
+            <li><strong>Edafología:</strong> Estudia el suelo en su relación con las plantas y el ambiente, abarcando aspectos físicos, químicos y biológicos.</li>
+        </ul>
+        
+        <img src="img/auxiliares.jpg" alt="">
+        
+        <h3>Clasificación de Aguas en el Mundo</h3>
+        <p><strong>Ríos:</strong> Corrientes continuas de agua, naturales o artificiales, en la superficie terrestre o subterráneas.</p>
+        <p><strong>Lagos:</strong> Cuerpos de agua dulce, generalmente aislados del mar.</p>
+        <p><strong>Lagunas:</strong> Depósitos de agua dulce, más pequeños y menos profundos que los lagos, a veces conectados al mar.</p>
+        <p><strong>Mares:</strong> Extensiones de agua salada, más pequeñas que los océanos, pero que forman parte de estos.</p>
+        <p><strong>Océanos:</strong> Grandes cuerpos de agua salada que cubren la mayor parte de la superficie terrestre.</p>
+        <p><strong>Aguas Oceánicas:</strong> Comprende todos los océanos y mares, caracterizados por ser salados y abarcar la mayoría del agua del planeta.</p>
+        <p><strong>Aguas Continentales:</strong> Incluyen ríos, lagos, estanques y aguas subterráneas, esenciales para los ecosistemas terrestres.</p>        
+        
+        <img src="img/mar.jpg" alt="">
 
+    </section>
+
+
+    <section id="mexico-puebla">
+        <h2>México y Puebla</h2>
+
+
+        <h3>Ríos de México</h3>
+        <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Ríos más importantes</th>
+                <th>Ríos más caudalosos</th>
+                <th>Ríos más grandes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Bravo</td>
+                <td>Grijalva</td>
+                <td>Cochos</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Balsas</td>
+                <td>Papaloapan</td>
+                <td>Bravo</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Lerma</td>
+                <td>Coatzacoalcos</td>
+                <td>Colorado</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Nazas</td>
+                <td>Balsas</td>
+                <td>Lerma</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Grijalva</td>
+                <td>Panuco</td>
+                <td>Papaloapan</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Santiago</td>
+                <td>Santiago</td>
+                <td>Usumacinta</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Tecolutla</td>
+                <td>Tonala</td>
+                <td>Balsas</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Papaloapan</td>
+                <td>Nazas</td>
+                <td>Yaqui</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Coatzacoalcos</td>
+                <td>Aguanaval</td>
+                <td>Coatzacoalcos</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Panuco</td>
+                <td>Balsas</td>
+                <td>Hondo</td>
+              </tr>
+            </tbody>
+          </table>
+        
+        <img src="img/rios.jpg" alt="">
+    
+        <h3>Elementos Hidrológicos</h3>
+        <p>La hidrología en México se caracteriza por una diversa distribución de aguas, abarcando 37 regiones hidrológicas. Las más notables incluyen cuencas como la del Río Bravo y zonas lluviosas como Chiapas. Destacan también los lagos de Chiapas y el lago Pátzcuaro.</p>
+    
+    <h2>Puebla</h2>
+    
+    <p><strong>Significado:</strong> El nombre "Puebla de los Ángeles" alude a su patrimonio histórico, simbolizando la unión de la cultura y la espiritualidad.</p>
+    
+    <p><strong>Ubicación Geográfica:</strong> Puebla se ubica en el corazón de México, con una geografía diversa que incluye importantes elevaciones y valles.</p>
+    <!-- Insertar aquí la Imagen de la Ubicación Geográfica --> <img src="img/puebla.svg" alt="">
+    <!-- Insertar aquí la Imagen del Escudo de Puebla --> <img src="img/puebla.jpg" alt="">
+
+    <p><strong>Relieve:</strong> Comparte el pico más alto del país, el Citlaltépetl, con Veracruz y posee una variedad de paisajes, desde sierras hasta llanuras costeras.</p>
+    
+    <p><strong>Hidrología:</strong> La riqueza hídrica de Puebla se divide en cuatro regiones hidrológicas principales, sustentando una amplia gama de ecosistemas y actividades humanas.</p>
+    <!-- Insertar aquí la Imagen de Hidrología --> <img src="img/hidropuebla.jpg" alt="">
+    
+    <p><strong>Clima:</strong> El clima en Puebla es variado; el templado subhúmedo domina, seguido por el cálido subhúmedo y zonas de clima seco, semiseco y húmedo, reflejando la diversidad altitudinal del estado.</p>
+    
+    <p><strong>Vegetación y Flora:</strong> Con bosques, selvas y praderas de alta montaña, la vegetación es tan variada como su clima, y la agricultura desempeña un papel significativo en el uso de la tierra.</p>
+    
+    <p><strong>Fauna:</strong> La fauna de Puebla es rica y variada, incluyendo especies adaptadas a cada uno de los distintos ecosistemas del estado, desde bosques y selvas hasta matorrales y zonas montañosas.</p>
+    
+    <p><strong>Regiones Económicas y Socioeconómicas:</strong> Puebla se caracteriza por una economía diversificada con regiones como Coronango y Cuautlancingo destacando en el desarrollo económico y urbano.</p>
+    <!-- Insertar aquí la Imagen de Regiones Económicas --> <img src="img/economicas.jpg" alt="">
+    <!-- Insertar aquí la Imagen de Regiones Socioeconómicas --> <img src="img/regionessocio.png" alt="">
+
+    <p><strong>Número de Municipios:</strong> Puebla se organiza en 217 municipios, cada uno con su propia identidad y contribución a la riqueza cultural y natural del estado.</p>
+
+    <img src="img/mun.jpg" alt="">
+
+</section>
+
+    
+
+
+<section id="elementos-bioticos-abioticos">
+    <h2>Elementos Bióticos y Abióticos</h2>
+    
+    <h3>Elementos Bióticos</h3>
+    <p>Los componentes bióticos son los seres vivos que forman parte de un ecosistema. Se clasifican en diversas categorías, como:</p>
+    <ul>
+        <li><strong>Animalia:</strong> Incluye todas las formas de vida animal.</li>
+        <li><strong>Plantas:</strong> Organismos fotosintéticos que producen oxígeno y sirven de alimento y hábitat.</li>
+        <li><strong>Fungi:</strong> Hongos que desempeñan un papel crucial en la descomposición y reciclaje de nutrientes.</li>
+    </ul>
+    <p>Algunos ejemplos comunes son mamíferos, árboles, hongos, bacterias y parásitos, cada uno desempeñando roles vitales dentro de sus ecosistemas.</p>
+    
+    <h3>Elementos Abióticos</h3>
+    <p>Los elementos abióticos son los componentes no vivos que influyen en los seres vivos y su entorno, como:</p>
+    <ul>
+        <li><strong>Naturales:</strong> Aire, luz, suelo, agua y rocas que conforman el hábitat de los seres vivos.</li>
+        <li><strong>Artificiales:</strong> Objetos creados por humanos como el mármol y las botellas, que pueden afectar el ecosistema.</li>
+    </ul>
+    <img src="img/bio.jpg" alt="">
+    <h3>Conceptos Relacionados</h3>
+    <p><strong>Biotipo:</strong> Se refiere a la forma típica de una especie que representa sus características predominantes.</p>
+    <p><strong>Biocenosis:</strong> Es la interacción y coexistencia de diversas poblaciones biológicas en un espacio y tiempo determinados.</p>
+</section>
+
+
+
+
+    <footer>
+        <p><strong>Integrantes:</strong></p>
+        <ul>
+            <li>Gerson Revilla Ramírez</li>
+            <li>Kevin Ibrahim Rodriguez Suárez</li>
+            <li>Yair Zeferino Ortiz Hernández</li>
+            <li>Angel Rodrigo Sánchez Madrid</li>
+        </ul>
+    </footer>
 </body>
 </html>
